@@ -1,293 +1,565 @@
 
-
-
-/* Mobile */
 @media (max-width: 598px){
     .all{
-        
-        Font-family: "Noto Sans KR",sans-serif;
+        width: 598px;
+        height: auto;
+        Font-family: "Noto Sans KR";
     }
-
+    .mypage{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 100%;
+        color: #444444; 
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 14px;
+        margin-top: 20px;
+        margin-left:5px;
+    }
+    .menuItem{
+        width: 100%;
+        height: 14px;
+        align-items:center;
+        text-decoration: none;
+        color: #222222;
+        font-family:" Noto Sans KR";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 100%;
+        display: flex; 
+        text-align: center;
+    }
+    #review{
+        font-weight: bold;
+    }
+    .topic{
+        border: 1px solid #FFFFFF;
+        Offset: 0px, 4px
+        rgba(194, 194, 194, 0.4);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-top: 60px;
+        box-shadow: 0px 4px 15px rgba(194, 194, 194, 0.4);
+        border-radius: 10px;
+    }
+    .topic_title{
+        background-color: #92A8D1 ;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;   
+    }
+    .topic_title_subtitle{
+        margin-left: 20px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        color:#FFFFFF;
+        font-family:"Noto Sans KR";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .topic_title_age{
+        margin-right: 21px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-family:"Noto Sans KR";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .topic_date{
+        margin-left: 22px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+    }
+    .topic_date_subject{
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #222222;
+    }
+    .topic_date_detail{
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #444444;
+        margin-left: 36px;
+    }
+    .topic_input{
+        margin-left:81px;  
+        margin-right: 59px;
+        margin-top: 36px;
+     }
+     .topic_input_text{
+         width: 100%;
+         height: 130px;
+         align-items:center;
+         vertical-align: center;
+         font-family: "Noto Sans KR";
+         font-style: normal;
+         font-weight: normal;
+         font-size: 14px;
+         line-height: 100%;
+         display: flex;
+         color: #666666;
+         background: #FDFDFD;
+         opacity: 0.3;
+         border: 1px solid #BBBBBB;
+         box-sizing: border-box;
+         border-radius: 5px;
+     }
+     .topic_file_text{
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #666666;
+    }
+    .topic_file{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 20px 0px 24px 71px;
+        width: 100%;
+    }
+    
+    .topic_file_area{
+        margin-right: 10px;
+        margin-left: 10px;
+        border: 2px dashed #BBBBBB;
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        stroke: #BBBBBB;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .topic_file_area input {
+        position: absolute;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .topic_file_photo{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        cursor: pointer;
+    }
+    .topic_file_plus{
+        margin-bottom: 8px;
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #888888;
+    }
+    .topic_btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 19px;
+        margin-bottom: 35px;
+    }
+    .cancelBtn{
+        width:100px;
+        height:30px;
+        margin-right: 20px;
+        background-color: #F9A7A7;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #F9A7A7;
+    }
+    .uploadBtn{
+        width:100px;
+        height:30px;
+        background-color: #8BAEEF;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #8BAEEF;
+    }
+    .topic_review{
+        margin-top:20px;
+        margin-left: 40px;
+    }
+    .secondTopic_date{
+        margin-left: 40px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+    }
+    .secondTopic_btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .topic_review_text{
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #222222;
+        font-weight: 400;
+       
+    }
+    .reviewBtn{
+        width:100px;
+        height:30px;
+        margin-right: 20px;
+        background-color: #F9A7A7;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #F9A7A7;
+    }
+    .retouchBtn{
+        width:100px;
+        height:30px;
+        background-color: #8BAEEF;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #8BAEEF;
+    }
+    .moreBtn{
+        width: 300px;
+        height: 40px;
+        align-items:center;
+        display:flex;
+        justify-content: center;
+        margin: 40px auto 175px auto;
+        border:1px solid #FDFDFD;
+        box-shadow: 0px 4px 15px rgba(194, 194, 194, 0.4);
+        border-radius: 10px;
+        background: #FDFDFD;
+        
+    }
+    
 }
 
- /* PC */
+
 .all{
-     margin: 40px 330px 175px 330px;
-     Font-family: "Noto Sans KR";
- }
- .mypage{
-    font-family: Noto Sans KR;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 100%;
-    color: #444444; 
+    margin: 40px 330px 175px 330px;
+    Font-family: "Noto Sans KR";
+}
+.mypage{
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 100%;
+   color: #444444; 
 }
 .menu{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 14px;
-    margin-top: 72px;
-    margin-left:5px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 14px;
+   margin-top: 72px;
+   margin-left:5px;
 }
 .menuItem{
-    width: 100%;
-    height: 14px;
-    align-items:center;
-    text-decoration: none;
-    color: #222222;
-    font-family:" Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 100%;
-    display: flex; 
-    text-align: center;
+   width: 100%;
+   height: 14px;
+   align-items:center;
+   text-decoration: none;
+   color: #222222;
+   font-family:" Noto Sans KR";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 100%;
+   display: flex; 
+   text-align: center;
 
-    
+   
 }
 #review{
-    font-weight: bold;
+   font-weight: bold;
 }
 .topic{
-    border: 1px solid #FFFFFF;
-    Offset: 0px, 4px
-    rgba(194, 194, 194, 0.4);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 60px;
-    box-shadow: 0px 4px 15px rgba(194, 194, 194, 0.4);
-    border-radius: 10px;
-        
-    
+   border: 1px solid #FFFFFF;
+   Offset: 0px, 4px
+   rgba(194, 194, 194, 0.4);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   margin-top: 60px;
+   box-shadow: 0px 4px 15px rgba(194, 194, 194, 0.4);
+   border-radius: 10px;
+       
+   
 }
 .topic_title{
-    background-color: #92A8D1 ;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    
+   background-color: #92A8D1 ;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   
 }
 .topic_title_subtitle{
-    margin-left: 20px;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    color:#FFFFFF;
-    font-family:"Noto Sans KR";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
+   margin-left: 20px;
+   margin-top: 11px;
+   margin-bottom: 11px;
+   color:#FFFFFF;
+   font-family:"Noto Sans KR";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 100%;
+   display: flex;
+   align-items: center;
 }
 .topic_title_age{
-    margin-right: 21px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-family:"Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+   margin-right: 21px;
+   margin-top: 12px;
+   margin-bottom: 12px;
+   font-family:"Noto Sans KR";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 100%;
+   display: flex;
+   align-items: center;
+   color: #FFFFFF;
 }
 .topic_date{
-    margin-left: 22px;
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
+   margin-left: 22px;
+   margin-top: 40px;
+   font-weight: 700;
+   font-size: 16px;
+   display: flex;
+   flex-direction: row;
 }
 .topic_date_subject{
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    color: #222222;
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 100%;
+   display: flex;
+   align-items: center;
+   color: #222222;
 }
 .topic_date_detail{
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    color: #444444;
-    margin-left: 36px;
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 100%;
+   display: flex;
+   align-items: center;
+   color: #444444;
+   margin-left: 36px;
 }
 .topic_input{
-   margin-left:81px;  
-   margin-right: 59px;
-   margin-top: 36px;
+  margin-left:81px;  
+  margin-right: 59px;
+  margin-top: 36px;
 }
 .topic_input_text{
-    width: 100%;
-    height: 130px;
-    align-items:center;
-    vertical-align: center;
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 100%;
-    display: flex;
-    color: #666666;
-    background: #FDFDFD;
-    opacity: 0.3;
-    border: 1px solid #BBBBBB;
-    box-sizing: border-box;
-    border-radius: 5px;
+   width: 100%;
+   height: 130px;
+   align-items:center;
+   vertical-align: center;
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 100%;
+   display: flex;
+   color: #666666;
+   background: #FDFDFD;
+   opacity: 0.3;
+   border: 1px solid #BBBBBB;
+   box-sizing: border-box;
+   border-radius: 5px;
 
 }
 .topic_file_text{
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    color: #666666;
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 100%;
+   display: flex;
+   align-items: center;
+   color: #666666;
 }
 .topic_file{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 20px 0px 24px 71px;
-    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   margin: 20px 0px 24px 71px;
+   width: 100%;
 }
 
 .topic_file_area{
-    margin-right: 10px;
-    margin-left: 10px;
-    border: 2px dashed #BBBBBB;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    stroke: #BBBBBB;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:space-between;
+   margin-right: 10px;
+   margin-left: 10px;
+   border: 2px dashed #BBBBBB;
+   border-radius: 5px;
+   width: 100px;
+   height: 100px;
+   stroke: #BBBBBB;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content:space-between;
 }
 .topic_file_area input {
-    position: absolute;
-    z-index: 2;
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    cursor: pointer;
+   position: absolute;
+   z-index: 2;
+   width: 100px;
+   height: 100px;
+   opacity: 0;
+   cursor: pointer;
 }
 .topic_file_photo{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-    cursor: pointer;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100px;
+   cursor: pointer;
 }
 .topic_file_plus{
-    margin-bottom: 8px;
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: #888888;
+   margin-bottom: 8px;
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   color: #888888;
 }
 .topic_btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 19px;
-    margin-bottom: 35px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   margin-right: 19px;
+   margin-bottom: 35px;
 }
 .cancelBtn{
-    width:100px;
-    height:30px;
-    margin-right: 20px;
-    background-color: #F9A7A7;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #F9A7A7;
+   width:100px;
+   height:30px;
+   margin-right: 20px;
+   background-color: #F9A7A7;
+   color: white;
+   border-radius: 5px;
+   border: 1px solid #F9A7A7;
 }
 .uploadBtn{
-    width:100px;
-    height:30px;
-    background-color: #8BAEEF;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #8BAEEF;
+   width:100px;
+   height:30px;
+   background-color: #8BAEEF;
+   color: white;
+   border-radius: 5px;
+   border: 1px solid #8BAEEF;
 }
 
 .topic_review{
-    margin-top:20px;
-    margin-left: 40px;
+   margin-top:20px;
+   margin-left: 40px;
 }
 .secondTopic_date{
-    margin-left: 40px;
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
+   margin-left: 40px;
+   margin-top: 40px;
+   font-weight: 700;
+   font-size: 16px;
+   display: flex;
+   flex-direction: row;
 }
 .secondTopic_btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 20px;
-    margin-bottom: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   margin-right: 20px;
+   margin-bottom: 20px;
 }
 .topic_review_text{
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    color: #222222;
-    font-weight: 400;
-   
+   font-family: "Noto Sans KR";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 100%;
+   display: flex;
+   align-items: center;
+   color: #222222;
+   font-weight: 400;
+  
 }
 .reviewBtn{
-    width:100px;
-    height:30px;
-    margin-right: 20px;
-    background-color: #F9A7A7;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #F9A7A7;
+   width:100px;
+   height:30px;
+   margin-right: 20px;
+   background-color: #F9A7A7;
+   color: white;
+   border-radius: 5px;
+   border: 1px solid #F9A7A7;
 }
 .retouchBtn{
-    width:100px;
-    height:30px;
-    background-color: #8BAEEF;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #8BAEEF;
+   width:100px;
+   height:30px;
+   background-color: #8BAEEF;
+   color: white;
+   border-radius: 5px;
+   border: 1px solid #8BAEEF;
 }
 .moreBtn{
-    width: 300px;
-    height: 40px;
-    align-items:center;
-    display:flex;
-    justify-content: center;
-    margin: 40px auto 175px auto;
-    border:1px solid #FDFDFD;
-    box-shadow: 0px 4px 15px rgba(194, 194, 194, 0.4);
-    border-radius: 10px;
-    background: #FDFDFD;
+   width: 300px;
+   height: 40px;
+   align-items:center;
+   display:flex;
+   justify-content: center;
+   margin: 40px auto 175px auto;
+   border:1px solid #FDFDFD;
+   box-shadow: 0px 4px 15px rgba(194, 194, 194, 0.4);
+   border-radius: 10px;
+   background: #FDFDFD;
 }
 
 
@@ -295,11 +567,6 @@
 
 
 
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -321,7 +588,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
