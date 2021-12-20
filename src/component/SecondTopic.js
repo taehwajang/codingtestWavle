@@ -12,7 +12,7 @@ function SecondTopic(props){
                 <div className="topic_date_detail">{props.datedetail}</div>
             </div>
             <div className="topic_review">
-                <p >
+                <p className="topic_review_text">
                     후기를 작성해주세요 <br />
                     소정의 포인트가 지급됩니다.
                 </p>
