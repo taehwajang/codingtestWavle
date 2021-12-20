@@ -1,0 +1,277 @@
+@media screen and (min-width: 767px) {
+.all{
+     margin: 40px 330px 175px 330px;
+     Font-family: "Noto Sans KR";
+ }
+.mypage{
+    width: auto;
+    height:28px;
+    font-weight: 700;
+    font-size: 28px;
+    Font-style: Bold;
+    Line-height: 28px;
+    Line-height: 100%;
+    align-items: Left;
+    Vertical-align: Top;
+    }
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 14px;
+    margin-top: 72px;
+    margin-left:5px;
+}
+.menuItem{
+    width: 100%;
+    height: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    align-items:center;
+    text-decoration: none;
+    color: #222222
+}
+#review{
+    font-weight: 700;
+}
+.topic{
+    border: 1px solid black;
+    Offset: 0px, 4px
+    rgba(194, 194, 194, 0.4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 60px;
+    
+    
+}
+.topic_title{
+    background-color: #92A8D1 ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.topic_title_subtitle{
+    margin-left: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-size: 18px;
+    align-items:center;
+    color:#FFFFFF;
+}
+.topic_title_age{
+    margin-right: 21px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color:#FFFFFF;
+}
+.topic_date{
+    margin-left: 22px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.topic_date_subject{
+    color: #222222;
+}
+.topic_date_detail{
+    margin-left: 36px;
+}
+.topic_input{
+   margin-left:81px;  
+   margin-right: 59px;
+   margin-top: 36px;
+}
+.topic_input_text{
+    width: 100%;
+    height: 130px;
+    align-items:center;
+    vertical-align: Center
+}
+.topic_file{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0px 24px 71px;
+    width: 100%;
+}
+
+.topic_file_area{
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    border-style: dashed;
+    width: 100px;
+    height: 100px;
+    stroke: #BBBBBB;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+}
+.topic_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 19px;
+    margin-bottom: 35px;
+}
+.cancelBtn{
+    width:100px;
+    height:30px;
+    margin-right: 20px;
+    background-color: #F9A7A7;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #F9A7A7;
+}
+.uploadBtn{
+    width:100px;
+    height:30px;
+    background-color: #8BAEEF;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #8BAEEF;
+}
+
+.topic_review{
+    margin-top:20px;
+    margin-left: 40px;
+}
+.secondTopic_date{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.secondTopic_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.reviewBtn{
+    width:100px;
+    height:30px;
+    margin-right: 20px;
+    background-color: #F9A7A7;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #F9A7A7;
+}
+.retouchBtn{
+    width:100px;
+    height:30px;
+    background-color: #8BAEEF;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #8BAEEF;
+}
+.moreBtn{
+    width: 300px;
+    height: 40px;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    margin: 40px auto 175px auto;
+}
+}
+@media screen and  (max-width:766px) {
+    .all{
+        margin: 40px 150px 175px 150px;
+        Font-family: "Noto Sans KR";
+    }
+    .mypage{
+        height:28px;
+        font-weight: 700;
+        font-size: 28px;
+        Font-style: Bold;
+        align-items: center;
+        margin: 40px 36% 20px 36%;
+
+        
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        height: 14px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+    
+    }
+    .menuItem{
+        margin-bottom:2px;
+        width: 100%;
+        height: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        align-items:center;
+        text-decoration: none;
+        display: flex;
+        justify-content:center;
+        color: #222222
+    }
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
