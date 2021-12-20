@@ -1,13 +1,18 @@
-import React,{ useState } from 'react';
+import React ,{ useState }from 'react';
 
 
 function Topic(props) {
-    const [comment, setComment] =useState([]);
+    const [comment, setComment] =useState([]); 
+    const fileList = [];
 
     function onChangeHandler(e){
-       setComment(e.target.value);
+        const commentIndex =  e.target.value;
+        setComment(commentIndex)
     }
-    
+    function onChangeFile(e){
+        fileList.push(e.target.files[0].name);
+    }
+
     return (
         <div className="topic">
             <div className="topic_title">
@@ -19,23 +24,35 @@ function Topic(props) {
                 <div className="topic_date_detail">{props.datedetail}</div>
             </div>
             <div className="topic_input">
-               <input type="textarea" className="topic_input_text" placeholder="내용을 입력하세요. 30자~500자 등록 가능" onChange={console.log(comment)}></input>
+               <input type="textarea" id ="inputComment" className="topic_input_text" placeholder="내용을 입력하세요. &#13;&#10; 30자~500자 등록 가능" onChange={(e)=>onChangeHandler(e)}></input>
             </div>
             <div className="topic_file">
                 <div className="topic_file_area">
-                    <input type="file"></input>
+                    <input type="file" onChange={(e) => onChangeFile(e)}></input>
+                    <div className="topic_file_photo">
+                        <p className="topic_file_plus">+</p>
+                        <p>사진첨부</p>
+                    </div>
                 </div> 
                 <div className="topic_file_area">
-                    <input type="file"></input>
+                    <div className="topic_file_photo">
+                        <p className="topic_file_plus">+</p>
+                        <p>사진첨부</p>
+                    </div>
+                    <input type="file" onChange={(e) => onChangeFile(e)}></input>
                 </div> 
                 <div className="topic_file_area">    
-                    <input type="file"></input>
+                    <div className="topic_file_photo">
+                        <p className="topic_file_plus">+</p>
+                        <p>사진첨부</p>
+                    </div>
+                    <input type="file" onChange={(e) => onChangeFile(e)}></input>
                 </div> 
 
             </div>
             <div className="secondTopic_btn">
-                <button className="cancelBtn" onClick={()=>alert("Are you sure you want to cancel")}>취소</button>
-                <button className="uploadBtn" onClick={()=>console.log(`제목: ${props.title}, 내용 :${setComment} `)}>등록하기</button>
+                <button className="cancelBtn">취소</button>
+                <button className="uploadBtn" onClick={()=>console.log(`제목: ${props.title}, 내용 : ${comment}, 파일 개수 : ${fileList.length},파일 원본 이름 :${fileList} `)}>등록하기</button>
             </div>
         </div>
     )
